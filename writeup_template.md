@@ -20,13 +20,13 @@ The goals / steps of this project are the following:
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/sliding_window.jpg
 [image5]: ./examples/bboxes_and_heat.png
-[image6]: ./video_images/heatimg/video10.png
-[image61]: ./video_images/heatimg/video13.png
-[image62]: ./video_images/heatimg/video16.png
-[image63]: ./video_images/heatimg/video28.png
-[image64]: ./video_images/heatimg/video31.png
-[image65]: ./video_images/heatimg/video34.png
-[image7]: ./video_images/retimg/video37.png
+[image6]: ./video_images/heatimg/video10.jpg
+[image61]: ./video_images/heatimg/video13.jpg
+[image62]: ./video_images/heatimg/video16.jpg
+[image63]: ./video_images/heatimg/video28.jpg
+[image64]: ./video_images/heatimg/video31.jpg
+[image65]: ./video_images/heatimg/video34.jpg
+[image7]: ./video_images/retimg/video37.jpg
 [video1]: ./output_images/project_output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
