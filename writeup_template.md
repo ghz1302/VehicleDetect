@@ -19,26 +19,10 @@ The goals / steps of this project are the following:
 [image11]: ./examples/image13.png
 [image2]: ./examples/vehicleheat.png
 [image22]: ./examples/nonvehicleheat.png
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./video_images/origimg/video10.jpg
-[image50]: ./video_images/retimg/video10.jpg
-[image51]: ./video_images/origimg/video13.jpg
-[image510]: ./video_images/retimg/video13.jpg
-[image52]: ./video_images/origimg/video16.jpg
-[image520]: ./video_images/retimg/video16.jpg
-[image53]: ./video_images/origimg/video28.jpg
-[image530]: ./video_images/retimg/video28.jpg
-[image54]: ./video_images/origimg/video31.jpg
-[image540]: ./video_images/retimg/video31.jpg
-[image55]: ./video_images/origimg/video34.jpg
-[image550]: ./video_images/retimg/video34.jpg
-[image6]: ./video_images/heatimg/video10.jpg
-[image61]: ./video_images/heatimg/video13.jpg
-[image62]: ./video_images/heatimg/video16.jpg
-[image63]: ./video_images/heatimg/video28.jpg
-[image64]: ./video_images/heatimg/video31.jpg
-[image65]: ./video_images/heatimg/video34.jpg
+[image3]: ./examples/test1.png
+[image4]: ./examples/test2.png
+[image5]: ./examples/sum1.png
+[image6]: ./examples/sum2.png
 [image7]: ./video_images/retimg/video37.jpg
 [video1]: ./output_images/project_output.mp4
 
@@ -65,7 +49,7 @@ I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an 
 
 I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
-Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
+Here is an example using the `YCrCb` color space and HOG parameters of `orientations=9`, `pixels_per_cell=8` and `cells_per_block=4`:
 
 
 ![alt text][image2]
@@ -77,20 +61,21 @@ I tried various combinations of parameters and...
 
 ####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using...
+I trained a MLPClassifier SVM using in 5th cell, Color space is YCrCb. 
 
 ###Sliding Window Search
 
-####1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
 
-![alt text][image3]
+####1. Describe how (and identify where in your code) you implemented a sliding window search. How did you decide what scales to search and how much to overlap windows?
+
+Function 'slide_window' defined in the 2nd cell. Using the following sizes, (64, 96, 128, 196), using overlap 0.8.
+
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
-
+![alt text][image3]
 ![alt text][image4]
 ---
 
@@ -107,27 +92,9 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
 ### Here are six frames and their corresponding heatmaps:
-
-![alt text][image5]
-![alt text][image50]
-![alt text][image51]
-![alt text][image510]
-![alt text][image52]
-![alt text][image520]
-![alt text][image53]
-![alt text][image530]
-![alt text][image54]
-![alt text][image540]
-![alt text][image55]
-![alt text][image550]
-
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
+![alt text][image5]
 ![alt text][image6]
-![alt text][image61]
-![alt text][image62]
-![alt text][image63]
-![alt text][image64]
-![alt text][image65]
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
 ![alt text][image7]
