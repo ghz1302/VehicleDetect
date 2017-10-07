@@ -19,7 +19,18 @@ The goals / steps of this project are the following:
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
+[image5]: ./video_images/origimg/video10.jpg
+[image50]: ./video_images/retimg/video10.jpg
+[image51]: ./video_images/origimg/video13.jpg
+[image510]: ./video_images/retimg/video13.jpg
+[image52]: ./video_images/origimg/video16.jpg
+[image520]: ./video_images/retimg/video16.jpg
+[image53]: ./video_images/origimg/video28.jpg
+[image530]: ./video_images/retimg/video28.jpg
+[image54]: ./video_images/origimg/video31.jpg
+[image540]: ./video_images/retimg/video31.jpg
+[image55]: ./video_images/origimg/video34.jpg
+[image550]: ./video_images/retimg/video34.jpg
 [image6]: ./video_images/heatimg/video10.jpg
 [image61]: ./video_images/heatimg/video13.jpg
 [image62]: ./video_images/heatimg/video16.jpg
@@ -94,14 +105,25 @@ Here's an example result showing the heatmap from a series of frames of video, t
 ### Here are six frames and their corresponding heatmaps:
 
 ![alt text][image5]
+![alt text][image50]
+![alt text][image51]
+![alt text][image510]
+![alt text][image52]
+![alt text][image520]
+![alt text][image53]
+![alt text][image530]
+![alt text][image54]
+![alt text][image540]
+![alt text][image55]
+![alt text][image550]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
 ![alt text][image6]
-[image61]
-[image62]
-[image63]
-[image64]
-[image65]
+![alt text][image61]
+![alt text][image62]
+![alt text][image63]
+![alt text][image64]
+![alt text][image65]
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
 ![alt text][image7]
