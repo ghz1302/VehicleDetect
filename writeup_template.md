@@ -19,10 +19,10 @@ The goals / steps of this project are the following:
 [image11]: ./examples/image13.png
 [image2]: ./examples/vehicleheat.png
 [image22]: ./examples/nonvehicleheat.png
-[image3]: ./examples/test1.png
-[image4]: ./examples/test2.png
-[image5]: ./examples/sum1.png
-[image6]: ./examples/sum2.png
+[image3]: ./examples/test1.PNG
+[image4]: ./examples/test2.PNG
+[image5]: ./examples/sum1.PNG
+[image6]: ./examples/sum2.PNG
 [image7]: ./video_images/retimg/video37.jpg
 [video1]: ./output_images/project_output.mp4
 
