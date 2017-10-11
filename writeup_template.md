@@ -108,5 +108,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
-
+It was hard to find right parameters like HOG parameter, overlap number and right classifier.
+There was many times to try parameters and I don't know exactly to find right numbers quickly.
+Maybe I should try many times to have a lot of experience.
+If I try more, I think I can make better work.
